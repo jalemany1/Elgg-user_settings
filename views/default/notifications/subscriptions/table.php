@@ -12,6 +12,7 @@ $methods = array_keys(_elgg_services()->notifications->getMethods());
 							], elgg_echo("notification:method:$method"));
 				}
 				?>
+			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>

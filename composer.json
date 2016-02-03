@@ -2,7 +2,7 @@
 	"name": "hypejunction/user_settings",
 	"version": "1.0.0",
 	"type": "elgg-plugin",
-	"description": "Notification templates for Elgg",
+	"description": "Improved settings pages for Elgg",
 	"homepage": "http://hypejunction.com",
 	"keywords": [
 		"elgg", "plugin", "notifications", "preferences"

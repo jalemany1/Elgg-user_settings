@@ -112,7 +112,7 @@ function user_settings_notifications_router($hook, $type, $return, $params) {
 		$user = get_user_by_username($username);
 	}
 
-	if (in_array($page, array('persona', 'group'))) {
+	if (in_array($page, array('personal', 'group'))) {
 		return array(
 			'identifier' => 'settings',
 			'segments' => array(

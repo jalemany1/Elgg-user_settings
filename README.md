@@ -11,4 +11,4 @@ User Settings for Elgg
  * Combines all settings into a tabbed layout
  * Removes all the spaghetti code and friendspicker from notifications forms
 
-
+![User Settings](https://raw.github.com/hypeJunction/Elgg-user_settings/master/screenshots/settings.png "User Settings Pages")

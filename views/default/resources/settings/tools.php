@@ -27,7 +27,7 @@ if ($plugin_id) {
 		$title = $plugin->getManifest()->getName();
 	}
 
-	elgg_push_breadcrumb(elgg_echo('user:settings:plugins'), "settings/plugins/$entity->username");
+	elgg_push_breadcrumb(elgg_echo('user:settings:tools'), "settings/plugins/$entity->username");
 
 	$content = elgg_view_form('plugins/usersettings/save', array(), array('entity' => $plugin));
 	$filter = false;
@@ -47,7 +47,7 @@ if ($plugin_id) {
 		}
 	}
 	ksort($mod);
-	$title = elgg_echo('user:settings:plugins');
+	$title = elgg_echo('user:settings:tools');
 	$content = implode('', $mod);
 	$filter = elgg_view('filters/settings', array(
 		'filter_context' => 'tools',

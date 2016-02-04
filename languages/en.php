@@ -7,6 +7,7 @@ return [
 
 	'user:settings:account' => 'Account',
 	'user:settings:tools' => 'Tools',
+	'user:settings:tools:no_results' => 'There are no tool that require extra configuration',
 	'user:settings:notifications' => 'Notifications',
 	'user:settings:statistics' => 'Statistics',
 

@@ -43,12 +43,18 @@ if ($plugin_id) {
 				$mod_title = $plugin->getManifest()->getName();
 			}
 			$mod_body = elgg_view_form('plugins/usersettings/save', array(), array('entity' => $plugin));
+			if (empty($mod_body)) {
+				continue;
+			}
 			$mod[$title] = elgg_view_module('info', $mod_title, $mod_body);
 		}
 	}
 	ksort($mod);
 	$title = elgg_echo('user:settings:tools');
 	$content = implode('', $mod);
+	if (empty($mod)) {
+		$content = elgg_format_element('p', ['class' => 'elgg-no-reuslts'], elgg_echo('user:settings:tools:no_results'));
+	}
 	$filter = elgg_view('filters/settings', array(
 		'filter_context' => 'tools',
 		'entity' => $entity,

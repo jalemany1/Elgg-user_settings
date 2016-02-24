@@ -1,3 +1,17 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/hypeJunction/Elgg-user_settings/compare/1.0.3...v1.1.0) (2016-02-24)
+
+
+### Bug Fixes
+
+* **forms:** fix access input ([9be4ae4](https://github.com/hypeJunction/Elgg-user_settings/commit/9be4ae4))
+
+### Features
+
+* **pages:** add profile edit and avatar edit pages to settings interface ([9054463](https://github.com/hypeJunction/Elgg-user_settings/commit/9054463))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/hypeJunction/Elgg-user_settings/compare/1.0.2...v1.0.3) (2016-02-08)
 

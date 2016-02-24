@@ -30,6 +30,9 @@ function user_settings_init() {
 		elgg_register_plugin_hook_handler('route', 'notifications', 'user_settings_notifications_router');
 	}
 
+	elgg_register_plugin_hook_handler('route', 'profile', 'user_settings_profile_router');
+	elgg_register_plugin_hook_handler('route', 'avatar', 'user_settings_avatar_router');
+
 	elgg_unregister_event_handler('pagesetup', 'system', 'notifications_plugin_pagesetup');
 
 	elgg_extend_view('elgg.css', 'elements/tables/notifications.css');
@@ -118,6 +121,70 @@ function user_settings_notifications_router($hook, $type, $return, $params) {
 			'segments' => array(
 				'notifications',
 				$user->username,
+			)
+		);
+	}
+}
+
+/**
+ * Route profile edit page
+ * 
+ * @param string $hook   "route"
+ * @param string $type   "profile"
+ * @param array  $return Route
+ * @param array  $params Hook params
+ * @return array
+ */
+function user_settings_profile_router($hook, $type, $return, $params) {
+
+	if (!is_array($return)) {
+		return;
+	}
+
+	$identifier = elgg_extract('identifier', $return);
+	$segments = elgg_extract('segments', $return);
+
+	$username = array_shift($segments);
+	$page = array_shift($segments);
+
+	if ($page == 'edit') {
+		return array(
+			'identifier' => 'settings',
+			'segments' => array(
+				'profile',
+				$username,
+			)
+		);
+	}
+}
+
+/**
+ * Route profile edit page
+ *
+ * @param string $hook   "route"
+ * @param string $type   "avatar"
+ * @param array  $return Route
+ * @param array  $params Hook params
+ * @return array
+ */
+function user_settings_avatar_router($hook, $type, $return, $params) {
+
+	if (!is_array($return)) {
+		return;
+	}
+
+	$identifier = elgg_extract('identifier', $return);
+	$segments = elgg_extract('segments', $return);
+	
+	$page = array_shift($segments);
+	$username = array_shift($segments);
+
+	if ($page == 'edit') {
+		return array(
+			'identifier' => 'settings',
+			'segments' => array(
+				'avatar',
+				$username,
 			)
 		);
 	}

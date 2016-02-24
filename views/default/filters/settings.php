@@ -4,6 +4,8 @@ $entity = elgg_extract('entity', $vars, elgg_get_page_owner_entity());
 $filter_context = elgg_extract('filter_context', $vars, 'user');
 
 $tabs = [
+	'profile' => "profile/$entity->username/edit",
+	'avatar' => "avatar/edit/$entity->username",
 	'account' => "settings/account/$entity->username",
 ];
 

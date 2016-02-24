@@ -5,6 +5,8 @@ return [
 	'user:settings:show_statistics' => 'Show Statistics',
 	'user:settings:show_language' => 'Show Language Setting',
 
+	'user:settings:profile' => 'Profile',
+	'user:settings:avatar' => 'Avatar',
 	'user:settings:account' => 'Account',
 	'user:settings:tools' => 'Tools',
 	'user:settings:tools:no_results' => 'There are no tool that require extra configuration',

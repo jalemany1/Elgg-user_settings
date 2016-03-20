@@ -46,7 +46,7 @@ if ($plugin_id) {
 			if (empty($mod_body)) {
 				continue;
 			}
-			$mod[$title] = elgg_view_module('info', $mod_title, $mod_body);
+			$mod[$mod_title] = elgg_view_module('info', $mod_title, $mod_body);
 		}
 	}
 	ksort($mod);

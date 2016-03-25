@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/hypeJunction/Elgg-user_settings/compare/1.1.1...v1.1.2) (2016-03-25)
+
+
+### Bug Fixes
+
+* **notifications:** removing group subscriptions works again ([2b0aec7](https://github.com/hypeJunction/Elgg-user_settings/commit/2b0aec7))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/hypeJunction/Elgg-user_settings/compare/1.1.0...v1.1.1) (2016-03-20)
 

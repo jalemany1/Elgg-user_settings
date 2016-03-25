@@ -36,6 +36,8 @@ function user_settings_init() {
 	elgg_unregister_event_handler('pagesetup', 'system', 'notifications_plugin_pagesetup');
 
 	elgg_extend_view('elgg.css', 'elements/tables/notifications.css');
+
+	elgg_register_action('notificationsettings/save', __DIR__ . '/actions/notificationsettings/save.php');
 }
 
 /**

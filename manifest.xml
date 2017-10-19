@@ -15,12 +15,7 @@
 
 	<requires>
 		<type>elgg_release</type>
-		<version>2.0</version>
-	</requires>
-
-	<requires>
-		<type>plugin</type>
-		<name>forms_api</name>
+		<version>2.1.0</version>
 	</requires>
 
 </plugin_manifest>
